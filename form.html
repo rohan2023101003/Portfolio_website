@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact form</title>
+    <style>
+        body{
+            background-image:url(pexels-ryutaro-tsukata-5745761.jpg);
+            background-attachment: fixed;
+            background-size:cover;
+        }
+        #maindiv{
+            display: flex;
+            height: 100vh;
+            justify-content: space-evenly;
+            align-items: center;
+        
+         
+        }
+        form{
+            display: flex;
+            width: 40vw;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            background-color:skyblue;
+            padding: 2rem 2rem 2rem 2rem;
+        }
+        input{
+            border: 2px solid balck;
+            margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+        }
+        #a100{
+            background-color:lightskyblue;
+           
+        }
+        @media(max-width:700px){
+            form{
+                width: 100vw;
+            }
+        }
+    </style>
+</head>
+<body>
+   <div id="maindiv">
+    <div>
+    <form action="#">
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <textarea name="feedback" id="a100" cols="40" rows="10" placeholder="Send your query/feedback"></textarea>
+        <input type="submit" placeholder="submit">
+    </form>
+</div>
+   </div>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Rouge Script' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Blog</title>
+    <style>
+    .fa {
+    font-size: 50px;
+    cursor: pointer;
+    user-select: none;
+    }
+
+    .fa:hover {
+    color: darkblue;
+    }
+    .fa-thumbs-up {
+      color:darkblue; /* Set thumbs-up icon color to red */
+    }
+    button{
+        visibility: inherit;
+    }
+    body{
+        background-image: url(pexels-ryutaro-tsukata-5745761.jpg);
+        background-attachment: fixed;
+        background-size:cover;
+    }
+    #blog1{
+       width: 50vw;
+       height: fit-content;
+    }
+    #blog2{
+        width: 50vw;
+       height: fit-content;
+    }
+    #blogs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+    }
+    p{
+        height: fit-content;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 1rem;
+    }
+    p:hover{
+        color:maroon;
+    }
+    li{
+        font-family: "Rouge Script",serif ;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    span{
+        border: 1px solid black;
+        padding: 2px 2px 2px 2px ;
+        background-color:darkcyan;
+        font-weight: bolder;
+        
+        border-radius: 5%;
+    }
+    #like1{
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    #topic{
+        background-color: maroon;
+        width: 50vw;
+    }
+    .Comments{
+        height: fit-content;
+        width: 100%;
+    }
+    #like2{
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    #heading{
+        display: flex;
+        text-align: center;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    /* button:active{
+       background-color:red;
+       font-weight: bold;
+
+    } */
+    @media(max-width:700px){
+        #blog1{
+            width: 90vw;
+            height: fit-content;
+        }
+        #blog2{
+            width: 90vw;
+            height: fit-content;
+        }
+        #topic{
+            width: 90vw;
+        }
+    }
+    button{
+        background-color: transparent;
+        border: none;
+    }
+   
+
+
+    </style>
+</head>
+<body>
+    <script src="script.js"></script>
+    <div id="heading"><div id="topic"><h2 style="color: wheat;">BLOGS</h2></div></div>
+    <div id="blogs">
+        <div id="blog1"><h2 style="text-align: center;;">Blog 1</h2>
+        <p><h3>Title: Ram Mandir: A Sacred Legacy</h3>
+
+            The Ram Mandir in Ayodhya is not just a temple; it's a symbol of faith deeply ingrained in the hearts of millions. This holy site, believed to be the birthplace of Lord Ram, has a storied past filled with reverence and controversy.
+            
+            For generations, devotees have revered Ayodhya as the birthplace of Lord Ram, making pilgrimages to seek blessings and solace. However, the site became a focal point of dispute between Hindu and Muslim communities, leading to decades of legal battles and tensions.
+            
+            In 2019, a landmark Supreme Court verdict brought closure to the long-standing dispute, paving the way for the construction of the Ram Mandir. This historic decision was celebrated as a triumph of unity and justice, emphasizing the need for communal harmony and peace.
+            
+            Today, the Ram Mandir stands tall as a symbol of India's cultural heritage and religious tolerance. It serves as a reminder of the power of faith to overcome obstacles and unite people from diverse backgrounds. As devotees flock to Ayodhya to pay homage to Lord Ram, the temple continues to inspire hope and reverence for generations to come.</p>
+       
+
+     <button id="likeButton1" onclick="toggleLike(1)"><i onclick="myFunction(this)" class="fa fa-thumbs-down"></i></button> 
+     <span id="likeCount1">0 Likes</span>
+        <hr>
+         <div>
+            <h3>Comments:</h3>
+            <li>comment1</li>
+            <li>comment2</li>
+            <li>comment3</li>
+         </div>
+    </div>
+        <div id="blog2"><h2 style="text-align: center;">Blog 2</h2>
+        <p> 
+            <h3>Title: Flavorful Delights: A Taste of Indian Cuisine</h3>
+
+            Indian cuisine is a delightful blend of flavors and spices that will tantalize your taste buds. From aromatic curries to crispy snacks, each dish tells a story of tradition and culture. Whether you're savoring the warmth of a spicy curry or indulging in a sweet dessert, Indian food offers a culinary experience like no other. So, why not embark on a flavorful journey and explore the rich and diverse world of Indian cuisine?</p>
+        <button id="likeButton2" onclick="toggleLike(2)"><i onclick="myFunction(this)" class="fa fa-thumbs-down"></i></button>
+        <span id="likeCount2">0 Likes</span>
+        <hr>
+       
+        <div>
+            <h3>Comments:</h3>
+            <li>comment1</li>
+            <li>comment2</li>
+            <li>comment3</li>
+         </div>
+<hr>
+        <footer style="background-color: maroon;height: 5rem;">
+        <h2 style="padding: 1rem 1rem 1rem 1rem;color: wheat;text-align: center;">Made By: ROHAN KUMAR</h2></footer>
+       
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
